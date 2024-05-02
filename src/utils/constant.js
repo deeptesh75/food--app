@@ -1,0 +1,4 @@
+export const CDN_URL="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
+export const LOGO_URL="https://img.freepik.com/premium-vector/online-food-app-icon-food-shop-location-logo-also-online-resturent-location-template_608547-155.jpg?w=996";
+export const CART_URL="https://media.istockphoto.com/id/1138644570/vector/shopping-cart-icon-design-cart-icon-symbol-design.jpg?s=1024x1024&w=is&k=20&c=yhd6bl3MzMOjEkYJzXtYCAafaeuFq-tFHNc4SBqTTis=";
+export const MENU_URL="https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.5868397&lng=73.68599499999999&restaurantId=";
