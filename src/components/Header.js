@@ -17,15 +17,15 @@ const Header=()=>{
             <img className="w-40" src={LOGO_URL}/>
         </div>
         <div className="flex items-center">
-            <ul className="flex p-4 m-4">
-                <li className="px-4">Online Status:{OnlineStatus ? "✅ ": "🍎"}</li>
-                <li className="px-4">
+            <ul className="p-4 m-4 lg:flex xl:flex">
+                <li className="px-4 sm:py-2">Online Status:{OnlineStatus ? "✅ ": "🍎"}</li>
+                <li className="px-4 sm:py-2">
                     <Link to="/">Home</Link></li>
-                <li className="px-4"><Link to="/about">About us</Link></li>
-                <li className="px-4"><Link to="/contact">contact us</Link></li>
-                <li className="px-4 font-bold text-xl"><Link to="/cart">Cart ({cartItems.length} items )</Link></li>
-                <li className="px-4"><Link to="/Grocery">Grocery</Link></li>
-                <li className="px-4"><button className="login" onClick={
+                <li className="px-4 sm:py-2"><Link to="/about">About us</Link></li>
+                <li className="px-4 sm:py-2"><Link to="/contact">contact us</Link></li>
+                <li className="px-4 font-bold text-xl sm:py-2"><Link to="/cart">Cart ({cartItems.length} items )</Link></li>
+                <li className="px-4 sm:py-2"><Link to="/Grocery">Grocery</Link></li>
+                <li className="px-4 sm:py-2"><button className="login" onClick={
                     ()=>{
                         btnNameReact==="login" ? setBtnNameReact("logout") :setBtnNameReact("login");
                     }

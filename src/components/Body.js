@@ -9,7 +9,9 @@ const Body = () => {
     const [searchText, setSearchText] = useState("");
     const RestaurentCardPromoted = withPromotedLabel(RestaurentCard);
     //console.log(listOfRestaurants);
-    useEffect(() => { fetchData(); }, []);
+    useEffect(() =>{ 
+        fetchData(); 
+    }, []);
     const fetchData = async () => {
         const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.5868397&lng=73.68599499999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
         const json = await data.json();
@@ -27,7 +29,7 @@ const Body = () => {
     
     return (
         <div className="body">
-            <div className="filter flex">
+            <div className="filter md:flex">
                 <div className="search m-4 p-4">
                     <input type="text" data-testid="searchInput" className="border border-solid border-black" value={searchText}
                         onChange={(e) => {
@@ -51,7 +53,7 @@ const Body = () => {
                         }}
                     >Top Rated Restaurants</button>
                 </div>
-                <div className="search m-4 p-4 flex items-center">
+                <div className="search m-4 p-4 items-center lg:flex">
                     <label>userName : </label>
                     <input className="border border-black p-2" value={loggedInUser} onChange={(e)=>setUserName(e.target.value)}/>
                 </div>
